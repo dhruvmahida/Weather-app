@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(160deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+.subtitle {
+  opacity: 0.8;
+  margin: 5px 0 20px;
+}
+
+/* search bar */
+.search {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: #ffb703;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffa200;
+}
+
+#message {
+  min-height: 24px;
+  margin: 10px 0;
+  color: #ffd6d6;
+}
+
+/* current weather card */
+#result {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* hide the card until data arrives */
+#result:empty {
+  display: none;
+}
+
+#result h2 {
+  font-size: 22px;
+}
+
+.temp {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#result p {
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+/* forecast */
+#forecast {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.day {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 10px 4px;
+  font-size: 13px;
+}
+
+.day img {
+  width: 42px;
+}
+
+/* history */
+.heading {
+  margin: 25px 0 8px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+#history button {
+  margin: 3px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+#history button:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
